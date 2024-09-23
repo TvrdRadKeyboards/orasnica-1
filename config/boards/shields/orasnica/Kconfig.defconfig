@@ -1,4 +1,4 @@
-if SHIELD_trk
+if SHIELD_orasnica
 
 config ZMK_KEYBOARD_NAME
     default "orasnica"
