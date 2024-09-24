@@ -129,6 +129,7 @@ combo_##NAME { \
 };
 
 &encoder { status = "okay"; };
+&encoder2 { status = "okay"; };
 
 / {
 	keymap {
@@ -141,8 +142,7 @@ combo_##NAME { \
                 &kp SQT        &kp C          &kp V          &kp B          &my_lt NAV SPACE    &my_lt SYM BACKSPACE    &kp M          &comsem        &dotcol        &kp ENTER
                                               &my_lt NUM X                                                              &my_lt FUN H
             >;
-			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
 		};
         numbers {
             label = "NUM";
@@ -153,8 +153,7 @@ combo_##NAME { \
                 &trans         &kp N3         &kp N2         &kp N1         &trans         &trans         &kp N1         &kp N2         &kp N3         &kp N0
                                                                             &trans         &kp E
             >;
-			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
         };
         navigation {
             label = "NAV";
@@ -165,8 +164,7 @@ combo_##NAME { \
                 &trans         &kp HOME       &kp PG_DN      &kp END         &trans         &trans         &kp HOME       &kp PG_UP      &kp END        &trans
                                                                              &trans         &trans
             >;
-			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
         };
         symbols {
             label = "SYM";
@@ -177,8 +175,7 @@ combo_##NAME { \
                 &trans         &kp TILDE      &kp SQT        &kp UNDERSCORE   &trans         &trans         &kp MINUS      &kp PLUS       &kp EQUAL      &trans
                                                                               &kp RBKT       &trans
             >;
-			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
         };
         function {
             label = "FUN";
@@ -189,8 +186,7 @@ combo_##NAME { \
                 &trans         &trans         &trans         &trans         &trans         &trans         &kp F1         &kp F2         &kp F3         &trans
                                                                             &trans         &trans
             >;
-			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
         };
 	};
 };
