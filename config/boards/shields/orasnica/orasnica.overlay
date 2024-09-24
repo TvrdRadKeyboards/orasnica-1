@@ -52,9 +52,22 @@
         resolution = <2>;
     };
 
+    encoder2: encoder2 {
+        compatible = "alps,ec11";
+        label = "ENCODER2";
+        a-gpios = <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        resolution = <2>;
+    };
+
     sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&encoder>;
+    };
+
+    sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&encoder2>;
     };
 };
 

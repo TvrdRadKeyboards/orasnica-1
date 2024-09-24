@@ -142,6 +142,7 @@ combo_##NAME { \
                                               &my_lt NUM X                                                              &my_lt FUN H
             >;
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 		};
         numbers {
             label = "NUM";
@@ -152,6 +153,7 @@ combo_##NAME { \
                 &trans         &kp N3         &kp N2         &kp N1         &trans         &trans         &kp N1         &kp N2         &kp N3         &kp N0
                                                                             &trans         &kp E
             >;
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
         navigation {
@@ -164,6 +166,7 @@ combo_##NAME { \
                                                                              &trans         &trans
             >;
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
         symbols {
             label = "SYM";
@@ -175,6 +178,7 @@ combo_##NAME { \
                                                                               &kp RBKT       &trans
             >;
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
         function {
             label = "FUN";
@@ -185,6 +189,7 @@ combo_##NAME { \
                 &trans         &trans         &trans         &trans         &trans         &trans         &kp F1         &kp F2         &kp F3         &trans
                                                                             &trans         &trans
             >;
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 	};
