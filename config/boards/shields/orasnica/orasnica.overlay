@@ -64,10 +64,5 @@
         compatible = "zmk,keymap-sensors";
         sensors = <&encoder>;
     };
-
-    sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&encoder2>;
-    };
 };
 
