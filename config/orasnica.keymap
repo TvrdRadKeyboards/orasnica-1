@@ -137,10 +137,10 @@ combo_##NAME { \
 		aptmak {
             label = "APT";
             bindings = <
-                &kp ESC        &kp W          &kp E          &kp R          &kp T               &kp Z                   &kp U          &kp I          &kp O          &kp P
-                &hl LCTRL A    &hl LALT S     &hl LGUI D     &hl LSHFT F    &hl RALT G          &hr RALT N              &hr RSHFT J    &hr RGUI K     &hr LALT L     &hr RCTRL P
-                &kp SQT        &kp C          &kp V          &kp B          &my_lt NAV SPACE    &my_lt SYM BACKSPACE    &kp M          &comsem        &dotcol        &kp ENTER
-                                              &my_lt NUM X                                                              &my_lt FUN H
+                &kp Q        &kp W          &kp E          &kp R          &kp T               &kp Y                   &kp U          &kp I          &kp O          &kp P
+                &hl LCTRL A  &hl LALT S     &hl LGUI D     &hl LSHFT F    &hl RALT G          &hr RALT H              &hr RSHFT J    &hr RGUI K     &hr LALT L     &hr RCTRL ENTER
+                &kp Z        &kp X          &kp C          &kp V          &my_lt NAV SPACE    &my_lt SYM BACKSPACE    &kp N          &kp M          &comsem        &dotcol
+                                            &my_lt NUM ESC                                                              		     	    &my_lt FUN B
             >;
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
 		};
