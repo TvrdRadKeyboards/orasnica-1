@@ -42,12 +42,19 @@
 			        { "row": 3, "col": 7, "x": 7, "y": 3 }
 			]
 		}
-	},
+	}, 
 	"sensors": [
 		{
 			"ref":  "encoder",
 			"name":  "ENCODER",
 			"identifier":  "encoder",
+			"compatible": "alps,ec11",
+			"enabled": true
+		},
+		{
+			"ref":  "encoder2",
+			"name":  "ENCODER2",
+			"identifier":  "encoder2",
 			"compatible": "alps,ec11",
 			"enabled": true
 		}
