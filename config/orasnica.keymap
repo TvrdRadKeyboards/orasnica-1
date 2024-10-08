@@ -121,7 +121,10 @@ combo_##NAME { \
                 &kp Z	&kp X	&kp C	&kp V	&my_lt NAV SPACE	&my_lt SYM BACKSPACE    &kp N	&kp M	&comsem	&dotcol
                         	&my_lt NUM ESC                                                          &my_lt FUN B
             >;
-			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
+			sensor-bindings = <
+				&inc_dec_kp C_VOL_DN C_VOL_UP
+				&inc_dec_kp PAGE_DOWN PAGE_UP
+			>;
 		};
         numbers {
             label = "NUM";
@@ -132,7 +135,10 @@ combo_##NAME { \
                 &trans         &kp N3         &kp N2         &kp N1         &trans         &trans         &kp N1         &kp N2         &kp N3         &kp N0
                                               &trans                                                                     &kp E
             >;
-			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
+			sensor-bindings = <
+				&inc_dec_kp C_VOL_DN C_VOL_UP
+				&inc_dec_kp PAGE_DOWN PAGE_UP
+			>;
         };
         navigation {
             label = "NAV";
@@ -143,7 +149,10 @@ combo_##NAME { \
                 &trans         &kp HOME       &kp PG_DN      &kp END         &trans         &trans         &kp HOME       &kp PG_UP      &kp END        &trans
                                               &trans                                                                      &trans
             >;
-			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
+			sensor-bindings = <
+				&inc_dec_kp C_VOL_DN C_VOL_UP
+				&inc_dec_kp PAGE_DOWN PAGE_UP
+			>;
         };
         symbols {
             label = "SYM";
@@ -154,7 +163,10 @@ combo_##NAME { \
                 &trans         &kp TILDE      &kp SQT        &kp UNDERSCORE   &trans         &trans         &kp MINUS      &kp PLUS       &kp EQUAL      &trans
                                               &kp RBKT                                                                     &trans
             >;
-			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
+			sensor-bindings = <
+				&inc_dec_kp C_VOL_DN C_VOL_UP
+				&inc_dec_kp PAGE_DOWN PAGE_UP
+			>;
         };
         function {
             label = "FUN";
@@ -165,7 +177,10 @@ combo_##NAME { \
                 &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &trans         &trans         &kp F1         &kp F2         &kp F3         &trans
                                               &bt BT_CLR                                                                 &trans
             >;
-			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AL_NEXT_TASK C_AL_PREV_TASK>;
+			sensor-bindings = <
+				&inc_dec_kp C_VOL_DN C_VOL_UP
+				&inc_dec_kp PAGE_DOWN PAGE_UP
+			>;
         };
 	};
 };
