@@ -62,11 +62,8 @@
 
     sensors {
         compatible = "zmk,keymap-sensors";
-        sensors = <&encoder,encoder2>;
+        sensors = <&encoder>;
 	encoder {
-		triggers-per-rotation = <24>;
-	};
-	encoder2 {
 		triggers-per-rotation = <24>;
 	};
     };
